@@ -225,11 +225,11 @@ def totalAndAverageValue(newDict, killCount):
     
     
 if __name__ == "__main__":
-    nmi, mi     = initialize("nightmare")
+    nmi, mi     = initialize("kreearra")
     dropDict    = getItems(mi, nmi)
     dropDict    = fixDropDict(dropDict)
     newDict     = finDropDict(dropDict)
-    newDict, kc = dropAmounts(dropDict, newDict, killCount=1)
+    newDict, kc = dropAmounts(dropDict, newDict, killCount=1337)
     newDict     = itemValues(dropDict, newDict)
     drops       = sortByHighestValue(newDict)
     total, avg  = totalAndAverageValue(newDict, kc)
